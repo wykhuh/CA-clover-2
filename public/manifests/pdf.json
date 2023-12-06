@@ -10,7 +10,7 @@
       "type": "Text"
     }
   ],
-  "id": "http://localhost:3000/pdf.json",
+  "id": "http://localhost:3000/manifests/pdf.json",
   "items": [
     {
       "height": 5792,

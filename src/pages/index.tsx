@@ -13,7 +13,7 @@ const Viewer = dynamic(
 );
 
 let manifests = [
-  { manifestUrl: "http://localhost:3000/pdf.json", target: "item1" },
+  { manifestUrl: "http://localhost:3000/manifests/pdf.json", target: "item1" },
   {
     manifestUrl:
       "https://seagate.whirl-i-gig.com/admin/service/IIIF/manifest/ca_objects:170",

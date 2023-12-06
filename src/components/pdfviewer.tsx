@@ -18,7 +18,7 @@ import { useState } from "react";
 
 // The source manifest which is the same as iiifContent prop passed
 // into Clover Viewer
-const url = "http://localhost:3000/pdf.json";
+const url = "http://localhost:3000/manifests/pdf.json";
 
 const PDFViewer = ({ id }: { id: string }) => {
   const [pdfSrc, setPdfSrc] = useState();
