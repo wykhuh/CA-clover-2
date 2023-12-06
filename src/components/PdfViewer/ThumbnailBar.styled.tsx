@@ -1,4 +1,4 @@
-import { styled } from "@/stitches";
+import { styled } from "@stitches/react";
 
 const ThumbnailList = styled("div", {
   backgroundColor: "#F2F2F0",

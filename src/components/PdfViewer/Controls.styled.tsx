@@ -1,4 +1,4 @@
-import { styled } from "@/stitches";
+import { styled } from "@stitches/react";
 
 const Button = styled("button", {
   display: "flex",

@@ -23,13 +23,6 @@ type PropType = {
 };
 export default function PdfViewer(props: PropType) {
   const { painting } = props;
-  /*
-  format: "application/pdf"
-height: 792
-id: "https://seagate.whirl-i-gig.com/admin/media/collectiveaccess/images/2/17015_ca_object_representations_media_255_original.pdf"
-type: "Text"
-width: 612
-*/
   const { configOptions } = useViewerState();
   let {
     pdfNumPages,
@@ -51,7 +44,7 @@ width: 612
   if (pdfNumPages === undefined) {
     pdfNumPages = 1;
   }
-  const file = painting.id;
+  const file = painting?.id;
 
   function onDocumentLoadSuccess({
     numPages: nextNumPages,
@@ -63,8 +56,8 @@ width: 612
   }
 
   const toolbarHeight = 50;
-  const height = painting.height || 500 - toolbarHeight;
-  let currentPageWidth = (painting.width || 355) * (pdfMagLevel / 100);
+  const height = painting?.height || 500 - toolbarHeight;
+  let currentPageWidth = (painting?.width || 355) * (pdfMagLevel / 100);
   let currentPageHeight = height * (pdfMagLevel / 100);
 
   let defaultPage = (
