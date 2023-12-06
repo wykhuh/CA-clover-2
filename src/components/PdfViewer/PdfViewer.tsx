@@ -7,9 +7,13 @@ import VisibilitySensor from "react-visibility-sensor";
 
 import PdfToolBar from "./Controls";
 import {
+  type ConfigOptions,
+  ViewerProvider,
   useViewerState,
   useViewerDispatch,
+  defaultState,
 } from "@/context/pdf-viewer-context";
+
 import ThumbnailBar from "./ThumbnailBar";
 
 type PdfPage = {
@@ -23,8 +27,26 @@ type VisibilityType = {
 
 type PropType = {
   painting: IIIFExternalWebResource;
+  id: string;
+  options?: ConfigOptions;
 };
+
 export default function PdfViewer(props: PropType) {
+  return (
+    <ViewerProvider
+      initialState={{
+        configOptions: {
+          ...defaultState,
+          ...props.options,
+        },
+      }}
+    >
+      <RenderPdfViewer {...props} />
+    </ViewerProvider>
+  );
+}
+
+function RenderPdfViewer(props: PropType) {
   const { painting } = props;
   const { configOptions } = useViewerState();
   let {
