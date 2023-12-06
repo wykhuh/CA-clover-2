@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useViewerState, useViewerDispatch } from "@/context/viewer-context";
+import { useViewerState, useViewerDispatch } from "@/context/pdf-viewer-context";
 
 import { Button, PagingWrapper } from "@/components/PdfViewer/Controls.styled";
 

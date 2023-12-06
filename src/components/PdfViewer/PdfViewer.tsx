@@ -6,7 +6,10 @@ import type { IIIFExternalWebResource } from "@iiif/presentation-3";
 import VisibilitySensor from "react-visibility-sensor";
 
 import PdfToolBar from "./Controls";
-import { useViewerState, useViewerDispatch } from "@/context/viewer-context";
+import {
+  useViewerState,
+  useViewerDispatch,
+} from "@/context/pdf-viewer-context";
 import ThumbnailBar from "./ThumbnailBar";
 
 type PdfPage = {

@@ -2,7 +2,7 @@ import React from "react";
 import { Document, Page } from "react-pdf";
 import VisibilitySensor from "react-visibility-sensor";
 
-import { useViewerState, useViewerDispatch } from "@/context/viewer-context";
+import { useViewerState, useViewerDispatch } from "@/context/pdf-viewer-context";
 import {
   ThumbnailContainer,
   ThumbnailList,

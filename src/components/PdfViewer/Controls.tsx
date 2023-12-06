@@ -3,7 +3,7 @@ import React from "react";
 import ToolBarFullScreen from "./ToolBar/ToolBarFullScreen";
 import ToolBarPaging from "./ToolBar/ToolBarPaging";
 import ToolBarZoom from "./ToolBar/ToolBarZoom";
-import { useViewerState, useViewerDispatch } from "@/context/viewer-context";
+import { useViewerState, useViewerDispatch } from "@/context/pdf-viewer-context";
 import { Button, Wrapper } from "@/components/PdfViewer/Controls.styled";
 
 const ChevronDownIcon = () => {

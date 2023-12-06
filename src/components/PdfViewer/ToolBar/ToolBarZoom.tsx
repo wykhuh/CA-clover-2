@@ -1,7 +1,7 @@
 import React from "react";
 import * as Popover from "@radix-ui/react-popover";
 
-import { useViewerState, useViewerDispatch } from "@/context/viewer-context";
+import { useViewerState, useViewerDispatch } from "@/context/pdf-viewer-context";
 import { Button, ZoomWrapper } from "@/components/PdfViewer/Controls.styled";
 
 const ZoomInIcon = () => {
